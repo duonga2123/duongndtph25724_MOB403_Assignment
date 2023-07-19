@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item1"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        android:title="Thông tin tài khoản" />
+    <item
+        android:icon="@drawable/baseline_drive_file_rename_outline_24"
+        android:id="@+id/nav_item2"
+        android:title="Đổi Username" />
+    <item
+        android:icon="@drawable/baseline_password_24"
+        android:id="@+id/nav_item3"
+        android:title="Đổi Password" />
+    <item
+        android:title="____________________________________" />
+    <item
+        android:icon="@drawable/baseline_logout_24"
+        android:id="@+id/nav_item4"
+        android:title="Đăng xuất" />
+
+</menu>

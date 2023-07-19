@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="300dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#C5C5C5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgitem"
+                android:scaleType="fitXY"
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_foreground"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="match_parent"
+                    android:text="Name:"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/nameitem"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:text="Product"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="3dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:text="Cost:"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/costitem"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ED0505"
+                android:layout_width="match_parent"
+                android:text="10000"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

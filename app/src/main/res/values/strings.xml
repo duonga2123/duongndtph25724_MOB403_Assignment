@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">duongndtph25724_MOB403_Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string-array name="product_types">
+        <item>Quần</item>
+        <item>Áo</item>
+        <item>Mũ</item>
+    </string-array>
+
+    <string-array name="product_sizes">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+</resources>
