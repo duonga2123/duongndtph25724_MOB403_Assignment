@@ -19,11 +19,26 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".Login_SignUp.ResetPasswordActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Login_SignUp.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login_SignUp.SignupActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
