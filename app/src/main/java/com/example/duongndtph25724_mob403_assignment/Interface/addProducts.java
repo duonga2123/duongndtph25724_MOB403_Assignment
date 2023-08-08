@@ -1,4 +1,4 @@
-package com.example.duongndtph25724_mob403_assignment.BottomNav;
+package com.example.duongndtph25724_mob403_assignment.Interface;
 
 import com.example.duongndtph25724_mob403_assignment.model.Products;
 

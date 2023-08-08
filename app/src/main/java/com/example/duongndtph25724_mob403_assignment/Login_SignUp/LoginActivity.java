@@ -3,6 +3,7 @@ package com.example.duongndtph25724_mob403_assignment.Login_SignUp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = inputEmail.getText().toString();
                 final String password = inputPassword.getText().toString();
+
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(getApplicationContext(), "Enter email address !", Toast.LENGTH_SHORT).show();
                     return;
@@ -91,8 +93,11 @@ public class LoginActivity extends AppCompatActivity {
                                                 getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new
-                                            Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Toast.makeText(LoginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("key1", email);
+                                    intent.putExtras(bundle);
                                     startActivity(intent);
 
                                     finish();

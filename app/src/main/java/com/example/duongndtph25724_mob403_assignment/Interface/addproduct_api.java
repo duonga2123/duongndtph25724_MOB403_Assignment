@@ -1,4 +1,4 @@
-package com.example.duongndtph25724_mob403_assignment.BottomNav;
+package com.example.duongndtph25724_mob403_assignment.Interface;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

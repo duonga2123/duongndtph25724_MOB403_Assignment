@@ -72,27 +72,29 @@ public class SignupActivity extends AppCompatActivity {
 //create user
                 auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
+                            @Override
 
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Toast.makeText(SignupActivity.this,
-                                "createUserWithEmail:onComplete:" + task.isSuccessful(),
-                                Toast.LENGTH_SHORT).show();
-                        progressBar.setVisibility(View.GONE);
-                        if (!task.isSuccessful()) {
-                            Toast.makeText(SignupActivity.this,
-                                    "Authentication failed." + task.getException(),
-                                    Toast.LENGTH_SHORT).show();
-                        } else {
-                            startActivity(new
-                                    Intent(SignupActivity.this, MainActivity.class));
-                            finish();
-                        }
-                    }
-                });
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                Toast.makeText(SignupActivity.this,
+                                        "createUserWithEmail:onComplete:" + task.isSuccessful(),
+                                        Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
+                                if (!task.isSuccessful()) {
+                                    Toast.makeText(SignupActivity.this,
+                                            "Authentication failed." + task.getException(),
+                                            Toast.LENGTH_SHORT).show();
+                                } else {
+                                    startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+                                    Toast.makeText(SignupActivity.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+
+                                    finish();
+                                }
+                            }
+                        });
             }
         });
     }
+
     @Override
     protected void onResume() {
         super.onResume();

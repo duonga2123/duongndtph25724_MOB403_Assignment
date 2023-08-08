@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#00bcd4"
+    android:background="@color/bg_login"
     android:fitsSystemWindows="true">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:layout_height="@dimen/logo_w_h"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/logo2" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,8 +29,9 @@
             android:layout_gravity="center_horizontal"
             android:padding="10dp"
             android:text="@string/action_sign_in_short"
+            android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="25dp" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +79,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:backgroundTint="#00bcd4"
+            android:backgroundTint="@color/bg_login"
             android:text="@string/btn_forgot_password"
             android:textColor="#f2fe71" />
         <Button
@@ -86,7 +87,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:backgroundTint="#00bcd4"
+            android:backgroundTint="@color/bg_login"
             android:text="@string/btn_link_to_login"
             android:textColor="@android:color/black" />
 

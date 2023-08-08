@@ -1,15 +1,18 @@
 package com.example.duongndtph25724_mob403_assignment.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Products {
-    String id, productname, productimage, producttype, size;
+    @SerializedName("_id")
+    String id;
+    String productname, productimg, producttype;
     Number price, mount;
 
-    public Products(String id, String productname, String productimage, String producttype, String size, Number price, Number mount) {
+    public Products(String id, String productname, String productimg, String producttype, Number price, Number mount) {
         this.id = id;
         this.productname = productname;
-        this.productimage = productimage;
+        this.productimg = productimg;
         this.producttype = producttype;
-        this.size = size;
         this.price = price;
         this.mount = mount;
     }
@@ -22,6 +25,11 @@ public class Products {
         this.id = id;
     }
 
+    public Products() {
+
+    }
+
+
     public String getProductname() {
         return productname;
     }
@@ -30,12 +38,12 @@ public class Products {
         this.productname = productname;
     }
 
-    public String getProductimage() {
-        return productimage;
+    public String getProductimg() {
+        return productimg;
     }
 
-    public void setProductimage(String productimage) {
-        this.productimage = productimage;
+    public void setProductimg(String productimg) {
+        this.productimg = productimg;
     }
 
     public String getProducttype() {
@@ -44,14 +52,6 @@ public class Products {
 
     public void setProducttype(String producttype) {
         this.producttype = producttype;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
     }
 
     public Number getPrice() {

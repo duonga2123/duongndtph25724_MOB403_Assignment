@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.duongndtph25724_mob403_assignment.BottomNav.Fragment1;
@@ -22,6 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView username;
     private BottomNavigationView bottomNavigationView;
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawerLayout;
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+        username = findViewById(R.id.userName);
+//        Bundle bundle = getIntent().getExtras();
+//        String title = bundle.getString("key1", "Default");
+//        username.setText(title);
+
 
         drawerToggle = new ActionBarDrawerToggle(
                 this,
@@ -128,5 +135,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void SetUserName(String name){
+        username = findViewById(R.id.userName);
+        username.setText(name);
     }
 }
